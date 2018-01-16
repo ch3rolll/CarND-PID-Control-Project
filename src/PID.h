@@ -41,6 +41,11 @@ public:
   * Calculate the total PID error.
   */
   double TotalError();
+
+  /*
+  * Update the parameters
+  */
+  void UpdateParameters(double tol);
 };
 
 #endif /* PID_H */
