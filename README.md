@@ -45,6 +45,7 @@ Self-Driving Car Engineer Nanodegree Program
  ## Reflection
  
  ### The effect each of the P, I, D component
+ ---
  
 * The gain function, KD, generates the derivative term. Note that the differential gain appears only in the feedback path. Such topology is common in controllers because it limits overshoot; in the forward path, a derivative term would likely produce a lot of overshoot in response to step (square wave) commands.
 
@@ -53,6 +54,7 @@ Self-Driving Car Engineer Nanodegree Program
 * The integral term KI is to make the system stiff and robust. In other words, a large KI makes it difficult for torque disturbances to move the shaft. Be careful, though, because the gain can become too large, generating a lot of overshoot.
 
 ### The selection of PID hyperparameters
+----
 
 It is well known that finding a perfect set of PID parameters is diffcult and it requires a lot of experience to tune the three parameters.
 
